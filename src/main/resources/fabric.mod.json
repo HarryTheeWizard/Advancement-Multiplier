@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "adv_multiplier_mod",
+  "version": "${version}",
+  "name": "Adv Multiplier Mod",
+  "description": "Advancement-based drop multiplier — each tracked advancement doubles your item drops.",
+  "authors": ["HarryTheeWizard"],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.harrytheewizard.advmultiplier.AdvMultiplierMod"
+    ]
+  },
+  "mixins": [
+    "adv_multiplier_mod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.2",
+    "fabric-api": "*",
+    "minecraft": "~26.1.2",
+    "java": ">=25"
+  }
+}
